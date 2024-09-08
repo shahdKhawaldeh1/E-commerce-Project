@@ -1,0 +1,124 @@
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+    border-radius: 16px;
+    object-fit: fill;
+    width: 90vw;
+    height: auto;
+}
+
+.image-gallery-thumbnails .image-gallery-thumbnails-container{
+    margin-top: 24px;
+}
+
+.image-gallery-left-nav, .image-gallery-right-nav {
+    bottom: 0;
+    transform: translateY(-50%);
+}
+
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg {
+    height: 40px;
+    width: 40px;
+    color: #171520;
+}
+
+.image-gallery-thumbnail {
+    width: 80px;
+    height: 80px;
+
+}
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+    border-radius: 8px;
+}
+
+
+.image-gallery-thumbnails-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.image-gallery-thumbnail.active, .image-gallery-thumbnail:focus {
+    border: 2px solid #1B4B66;
+    border-radius: 12px;
+}
+.image-gallery-right-nav {
+    right: 10px;
+    height: 24px;
+}
+.image-gallery-left-nav {
+    height: 24px;
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .image-gallery-content .image-gallery-slide .image-gallery-image {
+        border-radius: 16px;
+        object-fit: fill;
+        width: 60vw;
+        height: auto;
+    }
+    .image-gallery-thumbnails {
+        gap: 1rem;
+    }
+    .image-gallery-left-nav, .image-gallery-right-nav {
+        bottom: 0;
+        transform: translateY(230%);
+    }
+    .image-gallery-right-nav {
+        right: -40px;
+    }
+    .image-gallery-left-nav {
+        left: -40px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .image-gallery-content .image-gallery-slide .image-gallery-image {
+        border-radius: 16px;
+        object-fit: fill;
+        width: 35vw;
+        height: auto;
+    }
+    .image-gallery-thumbnails {
+        gap: 1rem;
+    }
+    .image-gallery-left-nav, .image-gallery-right-nav {
+        bottom: 0;
+        transform: translateY(180%);
+    }
+    .image-gallery-right-nav {
+        right: -50px;
+    }
+    .image-gallery-left-nav {
+        left: -50px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .image-gallery-content .image-gallery-slide .image-gallery-image {
+        width: 605px;
+        padding-left: 10px;
+    }
+    .image-gallery-left-nav, .image-gallery-right-nav {
+        bottom: 0;
+        transform: translateY(290%);
+    }
+    .image-gallery-thumbnail {
+        width: 60px;
+        height: 60px;
+
+    }
+    .image-gallery-thumbnails-container {
+        gap: 10px;
+    }
+    .image-gallery-right-nav {
+        right: 40px;
+    }
+    .image-gallery-left-nav {
+        left: 40px;
+    }
+}
+
+
+
